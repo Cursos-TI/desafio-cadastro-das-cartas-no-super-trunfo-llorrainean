@@ -7,7 +7,7 @@ int main() {
     char estado[3];      // Ex: "SP"
     int codigo;          // Código da Cidade
     char cidade[50];     // Nome da Cidade
-    long int populacao;  // População
+    float populacao;  // População
     float area;          // Área em km²
     float pib;           // PIB em bilhões
     char turisticos[100]; // Pontos turísticos
@@ -19,7 +19,7 @@ int main() {
     scanf("%c", estado);
 
     printf("Código da Cidade: \n");
-    scanf("%c", &codigo);
+    scanf("%d", &codigo);
 
     printf("Nome da Cidade: \n");
     scanf("%c", cidade);
