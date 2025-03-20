@@ -1,7 +1,5 @@
 #include <stdio.h>
-#include <string.h>
 
-// Estrutura para Armazenar dados da Cidade 
 int main() {
     printf("Desafio Super Trunfo\n");
     printf("Novo Commit\n");
@@ -9,7 +7,7 @@ int main() {
     char estado[3];      // Ex: "SP"
     int codigo;          // Código da Cidade
     char cidade[50];     // Nome da Cidade
-    long int populacao;  // População (pode ser grande)
+    long int populacao;  // População
     float area;          // Área em km²
     float pib;           // PIB em bilhões
     char turisticos[100]; // Pontos turísticos
@@ -22,11 +20,9 @@ int main() {
 
     printf("Código da Cidade: ");
     scanf("%d", &codigo);
-    getchar(); // Limpa buffer do teclado
 
     printf("Nome da Cidade: ");
-    fgets(cidade, sizeof(cidade), stdin);
-    cidade[strcspn(cidade, "\n")] = '\0'; // Remove \n do fgets
+    scanf("%s", cidade);
 
     printf("População: ");
     scanf("%ld", &populacao);
@@ -36,12 +32,20 @@ int main() {
 
     printf("PIB (em bilhões): ");
     scanf("%f", &pib);
-    getchar(); // Limpa buffer do teclado
 
     printf("Pontos Turísticos: ");
-    fgets(turisticos, sizeof(turisticos), stdin);
-    turisticos[strcspn(turisticos, "\n")] = '\0'; // Remove \n do fgets
+    scanf("%s", turisticos);
 
-    // Exibindo
+    // Exibindo os Dados
+    printf("\n===== DADOS DA CIDADE =====\n");
+    printf("Estado: %s\n", estado);
+    printf("Código: %d\n", codigo);
+    printf("Cidade: %s\n", cidade);
+    printf("População: %ld habitantes\n", populacao);
+    printf("Área: %.2f km²\n", area);
+    printf("PIB: R$ %.2f bilhões\n", pib);
+    printf("Pontos Turísticos: %s\n", turisticos);
+    printf("============================\n");
 
+    return 0;
 }
