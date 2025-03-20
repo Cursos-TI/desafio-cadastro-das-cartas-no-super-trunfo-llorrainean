@@ -68,13 +68,13 @@ int main(){
     printf("\n Digite os Dados da Carta 2 \n");
 
     printf("Estado (Ex: CE): \n");
-    scanf("%c", estado);
+    scanf("%2s", estado);
 
     printf("Codigo da Cidade: \n");
-    scanf("%c", codigo);
+    scanf("%2s", codigo);
 
     printf("Nome da Cidade: \n");
-    scanf("%c", cidade);
+    scanf("%2s", cidade);
 
     printf("População: \n");
     scanf("%d", populacao);
@@ -91,9 +91,9 @@ int main(){
     //Exibindo os Dados
     printf("\n DADOS DA CIDADE\n");
 
-    printf("Estado: %c\n", estado);
-    printf("Codigo: %c\n", codigo);
-    printf("Cidade %c\n", cidade );
+    printf("Estado: %2s\n", estado);
+    printf("Codigo: %2s\n", codigo);
+    printf("Cidade %2s\n", cidade );
     printf("Populaçao: %d\n", populacao);
     printf("Área: %f km2 \n", area);
     printf("PIB: R$ %f bilhões\n", pib);
