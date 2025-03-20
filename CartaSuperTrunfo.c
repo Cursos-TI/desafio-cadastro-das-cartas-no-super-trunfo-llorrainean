@@ -5,17 +5,17 @@ int main() {
     printf("Novo Commit\n");
 
     char estado;      // Ex: "SP"
-    char codigo;          // Código da Cidade
+    char codigo;     // Código da Cidade
     char cidade;     // Nome da Cidade
     int populacao;       // População
     float area;          // Área em km²
     float pib;           // PIB em bilhões
-    int turisticos[100]; // Pontos turísticos
+    int turisticos; // Pontos turísticos
 
     // Entrada de Dados
     printf("\nDigite os Dados da Carta 1\n");
 
-    printf("Estado: (EX>:SP)\n ");
+    printf("Estado: (Ex:SP)\n ");
     scanf("%c", estado);
 
     printf("Código da Cidade: \n");
@@ -61,7 +61,7 @@ int main(){
     int populacao;          //População     
     float area;             //Area em km2
     float pib;              //PIB em bilhões 
-    int turisticos[100];    // Pontos Turisticos
+    int turisticos;    // Pontos Turisticos
 
     // Entrada de Dados 
 
