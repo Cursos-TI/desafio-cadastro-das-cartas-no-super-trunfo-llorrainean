@@ -16,16 +16,16 @@ int main() {
     printf("\nDigite os Dados da Carta 1\n");
 
     printf("Estado (Ex: SP):\n ");
-    scanf("%2s", estado);
+    scanf("%c", estado);
 
     printf("Código da Cidade: \n");
-    scanf("%d", &codigo);
+    scanf("%c", &codigo);
 
     printf("Nome da Cidade: \n");
-    scanf("%s", cidade);
+    scanf("%c", cidade);
 
     printf("População: \n");
-    scanf("%ld", &populacao);
+    scanf("%f", &populacao);
 
     printf("Área (em Km²): \n ");
     scanf("%f", &area);
@@ -34,17 +34,17 @@ int main() {
     scanf("%f", &pib);
 
     printf("Pontos Turísticos:\n ");
-    scanf("%s", turisticos);
+    scanf("%f", turisticos);
 
     // Exibindo os Dados
     printf("\n===== DADOS DA CIDADE =====\n");
-    printf("Estado: %s\n", estado);
-    printf("Código: %d\n", codigo);
-    printf("Cidade: %s\n", cidade);
-    printf("População: %ld habitantes\n", populacao);
+    printf("Estado: %c\n", estado);
+    printf("Código: %c\n", codigo);
+    printf("Cidade: %c\n", cidade);
+    printf("População: %f habitantes\n", populacao);
     printf("Área: %.2f km²\n", area);
     printf("PIB: R$ %.2f bilhões\n", pib);
-    printf("Pontos Turísticos: %s\n", turisticos);
+    printf("Pontos Turísticos: %f\n", turisticos);
     printf("============================\n");
 
     return 0;
