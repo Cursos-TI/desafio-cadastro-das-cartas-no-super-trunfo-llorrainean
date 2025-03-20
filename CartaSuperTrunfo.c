@@ -16,29 +16,29 @@ int main() {
     printf("\nDigite os Dados da Carta 1\n");
 
     printf("Estado (Ex: SP):\n ");
-    scanf("%c", &estado);
+    scanf("%s", estado);
 
     printf("Código da Cidade: \n");
-    scanf("%d",&codigo);
+    scanf("%d", codigo);
 
     printf("Nome da Cidade: \n");
-    scanf("%c",&cidade);
+    scanf("%c", cidade);
 
     printf("População: \n");
-    scanf("%d", &populacao);
+    scanf("%d", populacao);
 
     printf("Área (em Km²): \n ");
-    scanf("%f", &area);
+    scanf("%f", area);
 
     printf("PIB (em bilhões): \n");
-    scanf("%f", &pib);
+    scanf("%f", pib);
 
     printf("Pontos Turísticos:\n ");
-    scanf("%d", &turisticos);
+    scanf("%d", turisticos);
 
     // Exibindo os Dados
     printf("\n===== DADOS DA CIDADE =====\n");
-    printf("Estado: %c\n", estado);
+    printf("Estado: %s\n", estado);
     printf("Código: %c\n", codigo);
     printf("Cidade: %c\n", cidade);
     printf("População: %d habitantes\n", populacao);
