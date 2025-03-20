@@ -56,7 +56,7 @@ int main(){
     printf("Desafio do Super Trunfo Carta 2");
 
     char estado[3];         //Ex:"SP"
-    char codigo[4];            // Codigo da carta 
+    char codigo[4];         // Codigo da cidade 
     char cidade[50];        // Nome da cidade
     int populacao;          //População     
     float area;             //Area em km2
@@ -71,7 +71,7 @@ int main(){
     scanf("%c", estado);
 
     printf("Codigo da Cidade: \n");
-    scanf("%d", codigo);
+    scanf("%c", codigo);
 
     printf("Nome da Cidade: \n");
     scanf("%c", cidade);
@@ -91,7 +91,7 @@ int main(){
     //Exibindo os Dados
     printf("\n DADOS DA CIDADE\n");
 
-    printf("Estado: %s\n", estado);
+    printf("Estado: %c\n", estado);
     printf("Codigo: %c\n", codigo);
     printf("Cidade %c\n", cidade );
     printf("Populaçao: %d\n", populacao);
