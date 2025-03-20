@@ -4,9 +4,9 @@ int main() {
     printf("Desafio Super Trunfo Carta 1\n");
     printf("Novo Commit\n");
 
-    char estado[3];      // Ex: "SP"
-    int codigo;          // Código da Cidade
-    char cidade[50];     // Nome da Cidade
+    char estado;      // Ex: "SP"
+    char codigo;          // Código da Cidade
+    char cidade;     // Nome da Cidade
     int populacao;       // População
     float area;          // Área em km²
     float pib;           // PIB em bilhões
@@ -15,11 +15,11 @@ int main() {
     // Entrada de Dados
     printf("\nDigite os Dados da Carta 1\n");
 
-    printf("Estado (Ex: SP):\n ");
-    scanf("estado: %c\n");
+    printf("Estado: (EX>:SP)\n ");
+    scanf("%c", estado);
 
     printf("Código da Cidade: \n");
-    scanf("%d", codigo);
+    scanf("%c", codigo);
 
     printf("Nome da Cidade: \n");
     scanf("%c", cidade);
@@ -38,7 +38,7 @@ int main() {
 
     // Exibindo os Dados
     printf("\n DADOS DA CIDADE \n");
-    printf("Estado: %s\n", estado);
+    printf("Estado: %c\n", estado);
     printf("Código: %c\n", codigo);
     printf("Cidade: %c\n", cidade);
     printf("População: %d\n", populacao);
@@ -55,9 +55,9 @@ int main() {
 int main(){
     printf("Desafio do Super Trunfo Carta 2");
 
-    char estado[3];         //Ex:"SP"
-    char codigo[4];         // Codigo da cidade 
-    char cidade[50];        // Nome da cidade
+    char estado;         //Ex:"SP"
+    char codigo;         // Codigo da cidade 
+    char cidade;        // Nome da cidade
     int populacao;          //População     
     float area;             //Area em km2
     float pib;              //PIB em bilhões 
