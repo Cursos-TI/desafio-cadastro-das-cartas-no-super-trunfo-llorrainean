@@ -15,25 +15,25 @@ int main() {
     // Entrada de Dados
     printf("\nDigite os Dados da Carta 1\n");
 
-    printf("Estado (Ex: SP): ");
+    printf("Estado (Ex: SP):\n ");
     scanf("%2s", estado);
 
-    printf("Código da Cidade: ");
+    printf("Código da Cidade: \n");
     scanf("%d", &codigo);
 
-    printf("Nome da Cidade: ");
+    printf("Nome da Cidade: \n");
     scanf("%s", cidade);
 
-    printf("População: ");
+    printf("População: \n");
     scanf("%ld", &populacao);
 
-    printf("Área (em Km²): ");
+    printf("Área (em Km²): \n ");
     scanf("%f", &area);
 
-    printf("PIB (em bilhões): ");
+    printf("PIB (em bilhões): \n");
     scanf("%f", &pib);
 
-    printf("Pontos Turísticos: ");
+    printf("Pontos Turísticos:\n ");
     scanf("%s", turisticos);
 
     // Exibindo os Dados
