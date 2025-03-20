@@ -21,8 +21,57 @@ int main() {
     return 0;
 }
 #include <stdio.h>
+#include <string.h>
+
+// Estrutura para Armazenar dados da Cidade 
 
 int main(){
     printf("Desafio Super trunfo");
-    printf("Novo Commit");
+    printf("Novo Commit \n");
+
+    char estado[3];      //Ex "SP"
+    char codigo;         //Código da Cidade
+    char cidade[50];     // Nome da Cidade 
+    int populacao;       // População 
+    float area;          // Area em Km2
+    float pib;           // PIB em bilhões 
+    int turisticos[100]; // Pontos Turisticos 
+
+    //Entrada de Dados
+    //Carta 1
+
+    printf("Digite os Dados da Carta %d \n");
+
+    printf("Estado: ");
+    scanf("%d", estado);
+
+    printf("Codigo da Cidade:" );
+    scanf("%d", codigo);
+
+    printf("Nome da Cidade:" );
+    scanf("%d", cidade);
+
+    printf("População:" );
+    scanf("%f", populacao);
+
+    printf("Área (em Km2): ");
+    scanf("%f", area);
+
+    printf("PIB (Em Bilhões): ");
+    scanf("%f", pib);
+
+    printf("Pontos Turisticos:" );
+    scanf("%d", turisticos);
+
+    //Exibindo os Dados Carta 1
+
+    printf("\nEstado: %c\n", estado);
+    printf("Codigo: %d\n", codigo);
+    printf("Cidade: %c\n", cidade);
+    printf("População: %f", populacao);
+    printf("Área: %f km2\n", area);
+    printf("PIB: R$. %f bilhões\n", pib);
+    printf("Pontos Turisticos: %s\n", turisticos);
+
+    return 0;
 }
