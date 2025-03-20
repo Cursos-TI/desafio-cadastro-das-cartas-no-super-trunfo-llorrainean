@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 int main() {
-    printf("Desafio Super Trunfo\n");
+    printf("Desafio Super Trunfo Carta 1\n");
     printf("Novo Commit\n");
 
-    char estado[3];      // Ex: "SP"
+    char estado;      // Ex: "SP"
     int codigo;          // Código da Cidade
     char cidade[50];     // Nome da Cidade
     int populacao;       // População
@@ -16,7 +16,7 @@ int main() {
     printf("\nDigite os Dados da Carta 1\n");
 
     printf("Estado (Ex: SP):\n ");
-    scanf("%s", estado);
+    scanf("estado: %c\n", estado);
 
     printf("Código da Cidade: \n");
     scanf("%d", codigo);
@@ -50,3 +50,17 @@ int main() {
     return 0;
 }
 
+#include<stdio.h>>
+ 
+int main(){
+    printf("Desafio do Super Trunfo Carta 2");
+
+    char estado;        //Estado
+    char codigo;        // Codigo da carta 
+    char cidade;        // Nome da cidade
+    int população;      //População     
+    float area;         //Area
+    float pib;          //PIB
+    int turisticos;     // Pontos Turisticos
+
+}
