@@ -37,15 +37,15 @@ int main() {
     scanf("%d", turisticos);
 
     // Exibindo os Dados
-    printf("\n===== DADOS DA CIDADE =====\n");
+    printf("\n DADOS DA CIDADE \n");
     printf("Estado: %s\n", estado);
     printf("Código: %c\n", codigo);
     printf("Cidade: %c\n", cidade);
-    printf("População: %d habitantes\n", populacao);
+    printf("População: %d\n", populacao);
     printf("Área: %f km²\n", area);
     printf("PIB: R$ %f bilhões\n", pib);
     printf("Pontos Turísticos: %d\n", turisticos);
-    printf("============================\n");
+   
 
     return 0;
 }
@@ -55,12 +55,52 @@ int main() {
 int main(){
     printf("Desafio do Super Trunfo Carta 2");
 
-    char estado;        //Estado
-    char codigo;        // Codigo da carta 
-    char cidade;        // Nome da cidade
-    int população;      //População     
-    float area;         //Area
-    float pib;          //PIB
-    int turisticos;     // Pontos Turisticos
+    char estado[3];         //Ex:"SP"
+    char codigo;            // Codigo da carta 
+    char cidade[50];        // Nome da cidade
+    int populacao;          //População     
+    float area;             //Area em km2
+    float pib;              //PIB em bilhões 
+    int turisticos[100];    // Pontos Turisticos
+
+    // Entrada de Dados 
+
+    printf("\n Digite os Dados da Carta 2 \n");
+
+    printf("Estado (Ex: CE): \n");
+    scanf("estado: %c\n");
+
+    printf("Codigo da Cidade: \n");
+    scanf("%d, codigo");
+
+    printf("Nome da Cidade: \n");
+    scanf("%c", cidade);
+
+    printf("População: \n");
+    scanf("%d", populacao);
+
+    printf("Area (km2): \n");
+    scanf("%f", area);
+
+    printf("PIB (em bilhões): \n");
+    scanf("%f", pib);
+
+    printf("Pontos Turisticos: \n");
+    scanf("%d", turisticos);
+
+    //Exibindo os Dados
+    printf("\n DADOS DA CIDADE\n");
+
+    printf("Estado: %s\n", estado);
+    printf("Código: %c\n", codigo);
+    printf("Cidade %c\n", cidade );
+    printf("População: %d\n", populacao);
+    printf("Área: %f km2 \n", area);
+    printf("PIB: R$ %f bilhões\n", pib);
+    printf("Pontos Turisticos: %d\n", turisticos);
+
+    return 0;
+
+
 
 }
