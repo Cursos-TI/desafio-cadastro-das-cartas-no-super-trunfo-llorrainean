@@ -4,7 +4,7 @@ int main() {
     printf("Desafio Super Trunfo Carta 1\n");
     printf("Novo Commit\n");
 
-    char estado;      // Ex: "SP"
+    char estado[3];      // Ex: "SP"
     int codigo;          // Código da Cidade
     char cidade[50];     // Nome da Cidade
     int populacao;       // População
@@ -16,7 +16,7 @@ int main() {
     printf("\nDigite os Dados da Carta 1\n");
 
     printf("Estado (Ex: SP):\n ");
-    scanf("estado: %c\n", estado);
+    scanf("estado: %c\n");
 
     printf("Código da Cidade: \n");
     scanf("%d", codigo);
